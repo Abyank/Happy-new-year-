@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy New Year 2026 Mathu ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1d1f3f, #000000 70%);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+    nav a:hover { opacity: 1; transform: translateY(-2px); }
+
+    .page {
+      min-height: 100vh;
+      padding: 130px 10% 80px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .page.active { display: flex; }
+
+    .card {
+      max-width: 850px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      padding: 55px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2.3rem; }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      opacity: 0.92;
+      margin-bottom: 22px;
+    }
+
+    .counter {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-top: 25px;
+      color: #ffd6e0;
+    }
+
+    .big-love {
+      font-size: 3.5rem;
+      color: #ffb6c1;
+      margin-top: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0) translateX(0); opacity: 0; }
+      10% { opacity: 0.6; }
+      to { transform: translateY(-120vh) translateX(50px); opacity: 0; }
+    }
+
+    .arrow {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      color: rgba(255,255,255,0.7);
+      cursor: pointer;
+      user-select: none;
+      z-index: 1001;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+
+    .arrow:hover {
+      color: #ffd6e0;
+      transform: translateY(-50%) scale(1.15);
+    }
+
+    .arrow.left { left: 15px; }
+    .arrow.right { right: 15px; }
+      10% { opacity: 0.6; }
+      to { transform: translateY(-120vh) translateX(50px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="arrow left" onclick="prevPage()">&#10094;</div>
+<div class="arrow right" onclick="nextPage()">&#10095;</div>
+
+<div id="intro" class="page active">
+  <div class="card">
+    <h1 style="color:#ffd7a0;">Happy New Year 2026</h1>
+    <p style="opacity:0.85;">For you, Mathu.</p>
+    <p style="opacity:0.75;">I wanted the first thing you see to feel calm, warm, and intentional.</p>
+    <p style="opacity:0.75;">Whenever you’re ready — go on.</p>
+  </div>
+</div>
+
+<div id="home" class="page">
+  <div class="card">
+    <h1>Happy New Year 2026, Mathu ❤️</h1>
+    <p>I don’t think I’ve ever been good with words, but I wanted to try — just for you.</p>
+    <p>This is a small piece of my heart, written into a place where time can’t erase it.</p>
+  </div>
+</div>
+
+<div id="time" class="page">
+  <div class="card">
+    <h2>Our Time Together</h2>
+    <p>Every single day with you slowly became my favorite part of life.</p>
+    <p>The laughs, the late talks, even the quiet moments — they all mean everything to me.</p>
+    <div class="counter" id="daysCounter">0 days</div>
+    <p>Since <strong>19th September 2024</strong></p>
+  </div>
+</div>
+
+<div id="words" class="page">
+  <div class="card">
+    <h2>What I’ve Been Carrying In My Heart</h2>
+    <p>This year was really hard for me in ways I don’t always know how to explain.</p>
+    <p>There were moments where I felt lost, overwhelmed, or unsure of myself — moments I didn’t always show properly.</p>
+    <p>But through all of that, you stayed. Even when things weren’t perfect. Even when I wasn’t at my best.</p>
+    <p>Having you beside me made the heavy days feel lighter. Made the quiet nights feel less lonely.</p>
+    <p>I genuinely don’t know where I would’ve been without you, Mathu. And saying that out loud scares me a little — because it shows just how much you matter to me.</p>
+    <p>We’ve had our ups and downs. We’ve disagreed. We’ve hurt each other without meaning to.</p>
+    <p>But what matters most to me is that we never walked away. We kept choosing to talk, to understand, to stay.</p>
+    <p>You’ve seen sides of me that not many people ever get to see — the good, the messy, the uncertain parts — and you still stayed.</p>
+    <p>That means more to me than I know how to put into words.</p>
+    <p>Thank you for your patience. Thank you for your love. Thank you for being my safe place when everything else felt overwhelming.</p>
+  </div>
+</div>
+
+<div id="future" class="page">
+  <div class="card">
+    <h2>Looking Ahead</h2>
+    <p>I don’t know exactly what the future looks like, and honestly, that used to scare me.</p>
+    <p>But knowing you’re in it makes everything feel lighter.</p>
+    <p>I hope we get to grow together, make mistakes together, and keep choosing each other — again and again.</p>
+  </div>
+</div>
+
+<div id="love" class="page">
+  <div class="card">
+    <h2>Before You See This…</h2>
+    <p>If you’re here, it means you’ve seen every part of what I wanted to say.</p>
+    <p>So here it is — no overthinking, no hiding.</p>
+    <div class="big-love">I love you, Mathu ❤️</div>
+    <p>Not just for who you are on good days, but for who you are on the hard ones too.</p>
+  </div>
+</div>
+
+<footer>
+  Made with love — always for you ❤️
+</footer>
+
+<script>
+  const pages = ['intro','home','time','words','future','love'];
+  let currentIndex = 0;
+  const visited = new Set(['intro']);
+
+  function showPageByIndex(index) {
+    const id = pages[index];
+    if (id === 'love' && visited.size < 4) return;
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    currentIndex = index;
+    visited.add(id);
+  }
+
+  function nextPage() {
+    if (currentIndex < pages.length - 1) {
+      showPageByIndex(currentIndex + 1);
+    }
+  }
+
+  function prevPage() {
+    if (currentIndex > 0) {
+      showPageByIndex(currentIndex - 1);
+    }
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') nextPage();
+    if (e.key === 'ArrowLeft') prevPage();
+  });
+
+  const startDate = new Date('2024-09-19');
+  const today = new Date();
+  const diffTime = today - startDate;
+  const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  document.getElementById('daysCounter').textContent = days + ' days';
+
+  
+</script>
+
+</body>
+</html>
